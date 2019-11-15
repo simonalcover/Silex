@@ -28,14 +28,14 @@ $app->register(new TranslationServiceProvider());
 $app->register(new RoutingServiceProvider());
 $app->register(new VarDumperServiceProvider());
 $app->register(new Silex\Provider\ValidatorServiceProvider());
-$app->register(new Silex\Provider\AssetServiceProvider(), array(
-    'assets.version' => 'v1',
-    'assets.version_format' => '%s?version=%s',
-    'assets.named_packages' => array(
-        'css' => array('version' => 'css3', 'base_path' => '/thirdparty/silex/css'),
-        'js'  => array('version' => 'js', 'base_path' => '/thirdparty/silex/js'),
-    ),
-));
+//$app->register(new Silex\Provider\AssetServiceProvider(), array(
+//    'assets.version' => 'v1',
+//    'assets.version_format' => '%s?version=%s',
+//    'assets.named_packages' => array(
+//        'css' => array('version' => 'css3', 'base_path' => '/thirdparty/silex/css'),
+//        'js'  => array('version' => 'js', 'base_path' => '/thirdparty/silex/js'),
+//    ),
+//));
 
 
 $app['twig'] = $app->extend('twig', function ($twig, $app) {
